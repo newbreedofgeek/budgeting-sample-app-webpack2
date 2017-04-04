@@ -6,10 +6,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
+    "watch": "webpack-dev-server",
+    "start": "cross-env NODE_ENV=production node server",
     "prod": "cross-env NODE_ENV=production webpack-dev-server --env.prod=true",
     "build": "cross-env NODE_ENV=production webpack --env.prod=true",
-    "lint": "eslint ./client ./webpack.config.js -f table || true"
+    "lint": "eslint ./client ./webpack.config.js -f table || true",
+    "postinstall": "if [ \"$NODE_ENV\" = \"production\" ]; then npm run build; fi"
   },
   "license": "MIT",
   "devDependencies": {
@@ -35,6 +37,7 @@
   },
   "dependencies": {
     "babel-runtime": "6.23.0",
+    "express": "^4.15.2",
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-redux": "5.0.3",
