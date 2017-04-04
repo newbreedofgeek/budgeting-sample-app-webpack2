@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router';
 
-export default ()=> {
+export default () => {
   return (
     <header>
-      <h1>Budget</h1>
+      <h1>Header</h1>
+      <Link to="/">Home</Link>
+      <Link to="/profile">Profile</Link>
     </header>
   );
 };

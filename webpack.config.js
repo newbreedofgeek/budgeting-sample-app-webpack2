@@ -115,7 +115,7 @@ module.exports = function (env) {
     devServer: {
       contentBase: './client',
       historyApiFallback: true,
-      port: 3000,
+      port: 3001,
       compress: isProd,
       inline: !isProd,
       hot: !isProd,
