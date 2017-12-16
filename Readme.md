@@ -1,6 +1,6 @@
 # Budgeting - React + Redux Sample App
 
-Sample app demonstrating the power and simplicity of React, Redux, and Webpack 2. Includes tree shaking configuration. 
+Sample app demonstrating the power and simplicity of React, Redux, and Webpack 2. Includes tree shaking configuration.
 
 This is a Webpack 2 version of a previous [Budgeting App](https://github.com/ModusCreateOrg/budgeting-sample-app).
 
@@ -11,7 +11,7 @@ This is a Webpack 2 version of a previous [Budgeting App](https://github.com/Mod
 - [x] [Redux](http://redux.js.org/)
 - [x] [Babel](https://babeljs.io/)
 
-Make sure you have the latest node before using Webpack 2. Some depenencies my fail in older versions. 
+Make sure you have the latest node before using Webpack 2. Some depenencies my fail in older versions.
 
 **Update 01/23/2017:** Bumped to Webpack 2.2 and React 15.4.2 with updates to webpack and babel config. Webpack's performance hints are on for production (`npm run prod`)
 
@@ -40,5 +40,4 @@ $ npm run build
 ```
 
 # License
-
 [MIT](License.md)
